@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SmartToolbox – Free Online PDF, Image, QR & Calculator Tools</title>
+  <meta name="description" content="Use free online tools from SmartToolbox: QR code generator, image compressor, image resizer, word counter, password generator, calculators and more.">
+  <meta name="keywords" content="free online tools, QR code generator, image compressor, word counter, age calculator, percentage calculator, EMI calculator">
+  <meta name="theme-color" content="#10172a">
+  <link rel="canonical" href="https://ytkids7867-ship-it.github.io/smarttoolbox/">
+  <meta property="og:title" content="SmartToolbox – Free Online Tools">
+  <meta property="og:description" content="Simple, useful tools that work in your browser.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="./" aria-label="SmartToolbox home"><span class="brand-mark">S</span><span>Smart<span class="brand-accent">Toolbox</span></span></a>
+  <nav><a href="#tools">Tools</a><a href="about.html">About</a><a href="privacy.html">Privacy</a></nav>
+  <a class="header-cta" href="#tools">Explore tools <span>↗</span></a>
+</header>
+<main>
+  <section class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow"><span class="live-dot"></span> FREE TOOLS · NO SIGN-UP</div>
+      <h1>Small tasks.<br><span>Smarter solutions.</span></h1>
+      <p class="hero-sub">A growing collection of simple, free online tools for everyday work. Fast, private and easy to use.</p>
+      <div class="hero-actions"><a class="primary-btn" href="#tools">Explore all tools <span>→</span></a><span class="trust-note">✦ Works on mobile & desktop</span></div>
+      <div class="hero-stats"><div><strong>10</strong><span>Useful tools</span></div><i></i><div><strong>Free</strong><span>Always to use</span></div><i></i><div><strong>0</strong><span>Sign-ups needed</span></div></div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb orb-one"></div><div class="orb orb-two"></div>
+      <div class="dashboard-card">
+        <div class="dash-top"><span class="dash-dot"></span><span class="dash-dot"></span><span class="dash-dot"></span><span class="dash-label">YOUR TOOLKIT</span><span class="dash-menu">•••</span></div>
+        <div class="dash-title">What can we help you do?</div>
+        <div class="mini-grid">
+          <div class="mini-tool purple"><b>▦</b><span>QR Code</span></div><div class="mini-tool blue"><b>▧</b><span>PDF Tools</span></div>
+          <div class="mini-tool orange"><b>◩</b><span>Images</span></div><div class="mini-tool green"><b>⌗</b><span>Calculators</span></div>
+        </div>
+        <div class="dash-foot"><span class="sparkle">✦</span><span>Simple tools. More time for you.</span></div>
+      </div>
+      <div class="float-chip chip-top">✦ 100% browser-based tools</div><div class="float-chip chip-bottom">⚡ Quick & easy</div>
+    </div>
+  </section>
+
+  <section class="trust-strip"><span>BUILT FOR EVERYDAY TASKS</span><b>PDF & DOCUMENTS</b><b>IMAGE UTILITIES</b><b>TEXT & PRODUCTIVITY</b><b>CALCULATORS</b></section>
+
+  <section class="tools-section" id="tools">
+    <div class="section-heading"><div><div class="eyebrow">THE TOOLKIT</div><h2>Find the right tool.<br><span>Get it done.</span></h2></div><p>Choose a tool below. Your files and calculations stay in your browser wherever possible.</p></div>
+    <div class="toolbar"><label class="search-box"><span>⌕</span><input id="toolSearch" type="search" placeholder="Search tools..." aria-label="Search tools"></label><div class="filters" role="group" aria-label="Filter tools"><button class="filter active" data-filter="all">All tools</button><button class="filter" data-filter="pdf">PDF</button><button class="filter" data-filter="image">Images</button><button class="filter" data-filter="text">Text</button><button class="filter" data-filter="calculator">Calculators</button></div></div>
+    <div class="tool-grid" id="toolGrid">
+      <article class="tool-card" data-category="image" data-name="qr code generator"><div class="tool-icon purple-bg">▦</div><span class="tool-tag">POPULAR</span><h3>QR Code Generator</h3><p>Create a downloadable QR code from a link or text.</p><button class="open-tool" data-tool="qr">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="image" data-name="image compressor"><div class="tool-icon orange-bg">◩</div><h3>Image Compressor</h3><p>Reduce JPG, PNG and WebP image file sizes in your browser.</p><button class="open-tool" data-tool="compress">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="pdf" data-name="pdf compressor"><div class="tool-icon red-bg">▤</div><h3>PDF Re-save Tool</h3><p>Re-save a PDF in your browser. This may reduce some files, but is not guaranteed to compress them.</p><button class="open-tool" data-tool="pdf">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="pdf" data-name="jpg to pdf converter"><div class="tool-icon red-bg">▧</div><h3>JPG to PDF</h3><p>Turn an image into a one-page PDF document.</p><button class="open-tool" data-tool="jpgpdf">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="image" data-name="image resizer"><div class="tool-icon orange-bg">⤢</div><h3>Image Resizer</h3><p>Resize an image to the dimensions you need.</p><button class="open-tool" data-tool="resize">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="text" data-name="word counter"><div class="tool-icon blue-bg">≡</div><h3>Word Counter</h3><p>Count words, characters, sentences and reading time.</p><button class="open-tool" data-tool="words">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="text" data-name="password generator"><div class="tool-icon green-bg">⌑</div><h3>Password Generator</h3><p>Generate a random password with adjustable length.</p><button class="open-tool" data-tool="password">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="text" data-name="text case converter"><div class="tool-icon blue-bg">Aa</div><h3>Text Case Converter</h3><p>Convert text to uppercase, lowercase or title case.</p><button class="open-tool" data-tool="case">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="calculator" data-name="age calculator"><div class="tool-icon purple-bg">◷</div><h3>Age Calculator</h3><p>Calculate your age in years, months and days.</p><button class="open-tool" data-tool="age">Open tool <span>→</span></button></article>
+      <article class="tool-card" data-category="calculator" data-name="emi calculator"><div class="tool-icon green-bg">₹</div><h3>EMI Calculator</h3><p>Estimate monthly loan payments and total interest.</p><button class="open-tool" data-tool="emi">Open tool <span>→</span></button></article>
+    </div>
+    <p class="empty-state" id="emptyState" hidden>No tools found. Try another search.</p>
+  </section>
+
+  <section class="privacy-banner"><div class="privacy-symbol">◈</div><div><h2>Your files are yours.</h2><p>Most tools process your input locally in your browser. We don't upload your files to a SmartToolbox server.</p></div><a href="privacy.html">Read our privacy note →</a></section>
+
+  <section class="faq-section"><div class="eyebrow">GOOD TO KNOW</div><h2>Frequently asked questions</h2>
+    <details><summary>Are these tools free?</summary><p>Yes. SmartToolbox tools are free to use. Some tools rely on third-party browser libraries loaded from a CDN.</p></details>
+    <details><summary>Do I need to create an account?</summary><p>No account is required for the tools on this version of SmartToolbox.</p></details>
+    <details><summary>Are my files uploaded?</summary><p>File processing is performed in your browser for the tools on this page. Avoid using any online tool for confidential documents unless you have reviewed its privacy and security properties.</p></details>
+    <details><summary>Can I use these tools on my phone?</summary><p>Yes. The website is responsive and designed for mobile, tablet and desktop screens.</p></details>
+  </section>
+</main>
+<footer class="site-footer"><a class="brand" href="./"><span class="brand-mark">S</span><span>Smart<span class="brand-accent">Toolbox</span></span></a><p>Useful tools for a simpler digital life.</p><div class="footer-links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></div><small>© <span id="year"></span> SmartToolbox. Made to be useful.</small></footer>
+
+<div class="modal-backdrop" id="toolModal" hidden>
+  <section class="tool-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head"><div><div class="eyebrow">SMARTTOOLBOX TOOL</div><h2 id="modalTitle">Tool</h2></div><button class="close-modal" id="closeModal" aria-label="Close">×</button></div>
+    <div id="toolPanel" class="tool-panel"></div>
+    <p class="tool-feedback" id="toolFeedback" role="status" aria-live="polite"></p>
+  </section>
+</div>
+</body>
+</html>
